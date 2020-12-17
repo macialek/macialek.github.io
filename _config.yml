@@ -27,6 +27,8 @@ url: "https://aidealist.pl" # the base hostname & protocol for your site, e.g. h
 twitter_username: macialek84
 github_username:  macialek
 
+# Google Analytics
+google_analytics: G-BDSPVS5N4J
 
 # Build settings
 theme: jekyll-theme-cayman
