@@ -23,7 +23,6 @@ email: maciej.michalek@aidealist.pl
 description: >- # this means to ignore newlines until "baseurl:"
   In data I trust.
   Data science, machine learning, automatyzacja, programowanie w języku Python. 
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aidealist.pl" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: macialek84
 github_username:  macialek
