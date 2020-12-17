@@ -31,7 +31,7 @@ github_username:  macialek
 google_analytics: G-BDSPVS5N4J
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
