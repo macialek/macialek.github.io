@@ -1,0 +1,167 @@
+{% assign page_url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+{% if page.title %}
+  {% assign page_title = page.title %}
+{% else %}
+  {% assign page_title = site.title %}
+{% endif %}
+{% if page.image %}
+  {% assign page_image = page.image %}
+{% else %}
+  {% assign page_image = site.logo %}
+{% endif %}
+{% if page.date %}
+  {% assign publish_date = page.date | date_to_xmlschema %}
+{% else %}
+  {% assign publish_date = "now" | date_to_xmlschema %}
+{% endif %}
+{% assign modified_date = "now" | date_to_xmlschema %}
+{% if page.author %}
+  {% assign page_author = page.author %}
+{% else %}
+  {% assign page_author = site.author.name %}
+{% endif %}
+{% if page.keywords %}
+  {% assign keywords = page.keywords %}
+{% else %}
+  {% assign keywords = site.keywords %}
+{% endif %}
+{% if page.description %}
+  {% assign description = page.description %}
+{% else %}
+  {% assign description = site.description %}
+{% endif %}
+{% if page.keywords %}
+  {% assign keywords = page.keywords %}
+{% else %}
+  {% assign keywords = site.keywords %}
+{% endif %}
+
+{% if page_title %}
+<title>{{ page_title }}</title>
+<meta property="og:title" content="{{ page_title }}" />
+{% endif %}
+{% if page_author %}
+<meta name="author" content="{{ page_author }}" />
+{% endif %}
+<meta property="og:locale" content="{{ page.lang | default: 'en' | replace:'-','_' }}" />
+
+{% if page_description %}
+<meta name="description" content="{{ page_description }}" />
+<meta property="og:description" content="{{ page_description }}" />
+{% endif %}
+
+{% if page_url %}
+  <link rel="canonical" href="{{ page_url }}" />
+  <meta property="og:url" content="{{ page_url }}" />
+{% endif %}
+
+{% if site.title %}
+<meta property="og:site_name" content="{{ site.title }}" />
+{% endif %}
+
+{% if page_image %}
+<meta property="og:image" content="{{ page_image }}" />
+{% endif %}
+
+{% if publish_date %}
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="{{ publish_date | date_to_xmlschema }}" />
+{% endif %}
+
+{% if paginator.previous_page %}
+  <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}" />
+{% endif %}
+{% if paginator.next_page %}
+  <link rel="next" href="{{ paginator.next_page_path | absolute_url }}" />
+{% endif %}
+
+{% if page_image %}
+  <meta name="twitter:card" content="{{ page.twitter.card | default: site.twitter.card | default: "summary_large_image" }}" />
+  <meta property="twitter:image" content="{{ page_image }}" />
+{% else %}
+  <meta name="twitter:card" content="summary" />
+{% endif %}
+
+{% if page_title %}
+  <meta property="twitter:title" content="{{ page_title }}" />
+{% endif %}
+
+{% if site.twitter_username %}
+  <meta name="twitter:site" content="@{{ site.twitter_username | remove:'@' }}" />
+  {% if page.twitter_username %}
+  <meta name="twitter:creator" content="@{{ page.twitter_username | remove:'@' }}" />
+  {% else %}
+  <meta name="twitter:creator" content="@{{ site.twitter_username | remove:'@' }}" />
+  {% endif %}
+{% endif %}
+
+{% if site.facebook %}
+  {% if site.facebook.admins %}
+    <meta property="fb:admins" content="{{ site.facebook.admins }}" />
+  {% endif %}
+
+  {% if site.facebook.publisher %}
+    <meta property="article:publisher" content="{{ site.facebook.publisher }}" />
+  {% endif %}
+
+  {% if site.facebook.app_id %}
+    <meta property="fb:app_id" content="{{ site.facebook.app_id }}" />
+  {% endif %}
+{% endif %}
+
+{% if site.webmaster_verifications %}
+  {% if site.webmaster_verifications.google %}
+    <meta name="google-site-verification" content="{{ site.webmaster_verifications.google }}" />
+  {% endif %}
+
+  {% if site.webmaster_verifications.bing %}
+    <meta name="msvalidate.01" content="{{ site.webmaster_verifications.bing }}" />
+  {% endif %}
+
+  {% if site.webmaster_verifications.alexa %}
+    <meta name="alexaVerifyID" content="{{ site.webmaster_verifications.alexa }}" />
+  {% endif %}
+
+  {% if site.webmaster_verifications.yandex %}
+    <meta name="yandex-verification" content="{{ site.webmaster_verifications.yandex }}" />
+  {% endif %}
+
+  {% if site.webmaster_verifications.baidu %}
+    <meta name="baidu-site-verification" content="{{ site.webmaster_verifications.baidu }}" />
+  {% endif %}
+{% elsif site.google_site_verification %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+{% endif %}
+
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{page_url}}"
+      },
+      "headline": "{{page_title}}",
+      "image": "{{page_image}}",
+      "datePublished": "{{publish_date}}",
+      "dateModified": "{{modified_date}}",
+      "author": {
+        "@type": "Person",
+        "name": "{{page_author}}"
+      },
+      "editor": "{{page_author}}",
+      "publisher": {
+        "@type": "Organization",
+        "name":"{{ site.title}}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{site.logo}}"
+        }
+      },
+      "description": "{{description}}",
+      "keywords": ["{{keywords | join: '","'}}"],
+      "genre": ["{{keywords | join: '","'}}"]
+        }
+
+    }
+</script>

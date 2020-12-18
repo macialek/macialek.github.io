@@ -19,11 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: AIdealist
-email: maciej.michalek@aidealist.pl
 description: >- # this means to ignore newlines until "baseurl:"
   In data I trust.
   Data science, machine learning, automatyzacja, programowanie w języku Python. 
 url: "https://aidealist.pl" # the base hostname & protocol for your site, e.g. http://example.com
+keywords: [data science, machine learning, artificial intelligence, python, automation]
+#logo: 
 
 # Google Analytics
 google_analytics: G-BDSPVS5N4J
