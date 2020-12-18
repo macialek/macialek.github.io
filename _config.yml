@@ -30,7 +30,7 @@ keywords: [data science, machine learning, artificial intelligence, python, auto
 google_analytics: G-BDSPVS5N4J
 
 minima:
-  date_format: "%b, %-d.%m.%Y"
+  date_format: "%-d.%m.%Y"
   social_links:
     twitter: macialek84
     github: macialek
