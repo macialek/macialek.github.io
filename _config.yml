@@ -31,6 +31,7 @@ google_analytics: G-BDSPVS5N4J
 
 minima:
   date_format: "%-d.%m.%Y"
+  skin: aidealist
   social_links:
     twitter: macialek84
     github: macialek
