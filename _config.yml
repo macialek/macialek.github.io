@@ -24,14 +24,26 @@ description: >- # this means to ignore newlines until "baseurl:"
   In data I trust.
   Data science, machine learning, automatyzacja, programowanie w języku Python. 
 url: "https://aidealist.pl" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: macialek84
-github_username:  macialek
 
 # Google Analytics
 google_analytics: G-BDSPVS5N4J
 
+minima:
+  date_format: "%b, %-d.%m.%Y"
+  social_links:
+    twitter: macialek84
+    github: macialek
+    stackoverflow: "10815718"
+    linkedin: macialek
+  
+
+author:
+  name: Maciej Michałek
+  email: "maciej.michalek@aidealist"
+
 # Build settings
 theme: minima
+show_excerpts: true
 plugins:
   - jekyll-feed
 
