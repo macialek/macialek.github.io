@@ -39,23 +39,24 @@ $table-border-color:    $border-color-01 !default;
 	color: #AAAAAA; 
 	background-color: #4D4D4DF9;
 	text-align: center;
+	line-height: normal;
 }
 
 #dismiss {
   text-align: right;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .consent {
-  margin-top: 1px;
-  margin-bottom: 2px;
+  margin-top: 2px;
+  margin-bottom: 5px;
   padding: 1px;
 }
 
 #accept, #reject, #change {
   background-color: $link-base-color;
   border: none;
-  color: #AAAAAA;
+  color: #000000;
   padding: 10px;
   text-align: center;
   text-decoration: none;
