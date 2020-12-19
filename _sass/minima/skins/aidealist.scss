@@ -1,4 +1,14 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'Unica';
+    src: url(/assets/fonts/UnicaOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Abel';
+    src: url(/assets/fonts/Abel-Regular.ttf) format('truetype');
+}
+
+$base-font-family: 'Abel', monospace;
 
 $brand-color:           #4D4D4D !default;
 $brand-color-light:     lighten($brand-color, 40%) !default;
