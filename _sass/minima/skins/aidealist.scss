@@ -36,8 +36,20 @@ $table-border-color:    $border-color-01 !default;
 
 // Cookie Consent
 amp-consent {
-	color: #3D7DA6; 
-	background-color: #4D4D4DDD
+	color: #AAAAAA; 
+	background-color: #4D4D4DFA
+	border-radius: 35%;
+}
+
+.button {
+  background-color: $background-color;
+  border: none;
+  color: #AAAAAA;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25%;
 }
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
