@@ -44,7 +44,7 @@ $table-border-color:    $border-color-01 !default;
 
 #post-consent-ui {
 	color: #AAAAAA; 
-	background-color: #4D4D4DF9;
+	background-color: #4D4D4DCC;
 	text-align: right;
 	line-height: normal;
 	width: 41px;
@@ -82,7 +82,8 @@ $table-border-color:    $border-color-01 !default;
 }
 
 #change {
-  background-color: #4D4D4DF9;
+  background: none;
+  
 }
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
