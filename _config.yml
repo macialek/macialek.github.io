@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Data science, machine learning, automatyzacja, programowanie w języku Python. 
 url: "https://aidealist.pl" # the base hostname & protocol for your site, e.g. http://example.com
 keywords: [data science, machine learning, artificial intelligence, python, automation]
-#logo: 
+logo: https://aidealist.pl/assets/img/aidealist.svg
 
 # Google Analytics
 google_analytics: G-BDSPVS5N4J
