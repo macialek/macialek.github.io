@@ -47,7 +47,11 @@ $table-border-color:    $border-color-01 !default;
 	background-color: #4D4D4DF9;
 	text-align: right;
 	line-height: normal;
-	width: 40px;
+	width: 41px;
+	height: 41px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
 }
 
 #myConsent{
