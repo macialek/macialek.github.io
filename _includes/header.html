@@ -1,34 +1,5 @@
 <header class="site-header">
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
-  <amp-consent id="myConsent"
-  layout="nodisplay">
-  <script type="application/json">{
-        "consentInstanceId": "advanced-consent",
-        "consentRequired": true,
-        "promptUI": "consentDialog",
-        "postPromptUI": "post-consent-ui"
-      }</script>
-  <div class="lightbox"
-    id="consentDialog">
-    <div class="lightbox-content">
-      <div class="dismiss-button"
-        role="button"
-        tabindex="0"
-        on="tap:myConsent.dismiss">X</div>
-      <div class="message">
-        <h2>Zgoda na na analitykę</h2>
-        <p>Czy zgadzasz się na śledzenie przez Google Analytics na tych stronach?</p>
-      </div>
-      <div id="choice">
-		<button on="tap:myConsent.accept">Zgadzam się</button>
-		<button on="tap:myConsent.reject">Nie zgadzam się</button>
-      </div>
-    </div>
-  </div>
-  <div id="post-consent-ui">
-    <button on="tap:myConsent.prompt()">Zmień zgodę na analitykę</button>
-  </div>
-  </amp-consent>
     {%- include google-analytics.html -%}
   {%- endif -%}
   <div class="wrapper">

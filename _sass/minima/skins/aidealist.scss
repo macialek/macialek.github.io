@@ -34,6 +34,11 @@ $table-header-bg-color: lighten($brand-color, 43%) !default;
 $table-header-border:   lighten($brand-color, 37%) !default;
 $table-border-color:    $border-color-01 !default;
 
+// Cookie Consent
+amp-consent {
+	color: #3D7DA6; 
+	background-color: #4D4D4DDD
+}
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
 // ----------------------------------------------------------------------------
