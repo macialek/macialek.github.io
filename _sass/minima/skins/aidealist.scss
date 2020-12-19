@@ -45,14 +45,17 @@ $table-border-color:    $border-color-01 !default;
 #post-consent-ui {
 	color: #AAAAAA; 
 	background-color: #4D4D4DF9;
-	text-align: right;
 	line-height: normal;
-	width: 25px;
+	width: 40px;
+	position: absolute;
+	right: 0px;
 }
 
+#myConsent{
+	background: none;
+}
 
 #dismiss {
-  text-align: right;
   margin-right: 10px;
 }
 
