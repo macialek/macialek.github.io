@@ -35,13 +35,14 @@ $table-header-border:   lighten($brand-color, 37%) !default;
 $table-border-color:    $border-color-01 !default;
 
 // Cookie Consent
-amp-consent {
+#consentDialog, #post-consent-ui {
 	color: #AAAAAA; 
 	background-color: #4D4D4DFA;
-	border-radius: 35%;
+	border-radius: 3px;
+	text-align: center;
 }
 
-.button {
+#accept, #reject {
   background-color: $background-color;
   border: none;
   color: #AAAAAA;
@@ -49,7 +50,7 @@ amp-consent {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 25%;
+  border-radius: 4px;
 }
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
