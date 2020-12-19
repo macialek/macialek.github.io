@@ -35,12 +35,21 @@ $table-header-border:   lighten($brand-color, 37%) !default;
 $table-border-color:    $border-color-01 !default;
 
 // Cookie Consent
-#consentDialog, #post-consent-ui {
+#consentDialog {
 	color: #AAAAAA; 
 	background-color: #4D4D4DF9;
 	text-align: center;
 	line-height: normal;
 }
+
+#post-consent-ui {
+	color: #AAAAAA; 
+	background-color: #4D4D4DF9;
+	text-align: right;
+	line-height: normal;
+	width: 25px;
+}
+
 
 #dismiss {
   text-align: right;
@@ -63,6 +72,10 @@ $table-border-color:    $border-color-01 !default;
   display: inline-block;
   border-radius: 4px;
   margin-bottom: 15px;
+}
+
+#change {
+  background-color: #4D4D4DF9;
 }
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
