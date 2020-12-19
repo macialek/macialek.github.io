@@ -1,5 +1,19 @@
 <header class="site-header">
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
+  <amp-consent layout="nodisplay" id="consent-element">
+  <script type="application/json">
+    {
+      "consentInstanceId": "cookie-consent",
+      "consentRequired": "remote",
+      "promptUI": "consent-ui",
+    }
+  </script>
+  <div id="consent-ui">
+    <button on="tap:consent-element.accept" role="button">Zgadzam się</button>
+    <button on="tap:consent-element.reject" role="button">Odrzucam</button>
+    <button on="tap:consent-element.dismiss" role="button">Zamknij to okno</button>
+  </div>
+  </amp-consent>
     {%- include google-analytics.html -%}
   {%- endif -%}
   <div class="wrapper">
