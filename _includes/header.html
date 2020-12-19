@@ -4,15 +4,25 @@
   <script type="application/json">
     {
       "consentInstanceId": "cookie-consent",
-      "consentRequired": "remote",
+      "consentRequired": true,
       "promptUI": "consent-ui",
     }
   </script>
+  <amp-story-consent id="consent-ui" layout="nodisplay">
+  <script type="application/json">
+      {
+        "title": "Zgodna na ciasteczka",
+        "message": "Czy mogę używać anlityki na tej stronie?",
+        "vendors": ["Google Analytics"]
+      }
+  </script>
+  </amp-story-consent>
   <div id="consent-ui">
     <button on="tap:consent-element.accept" role="button">Zgadzam się</button>
     <button on="tap:consent-element.reject" role="button">Odrzucam</button>
     <button on="tap:consent-element.dismiss" role="button">Zamknij to okno</button>
   </div>
+  
   </amp-consent>
     {%- include google-analytics.html -%}
   {%- endif -%}
