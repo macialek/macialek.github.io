@@ -42,7 +42,16 @@ $table-border-color:    $border-color-01 !default;
 	text-align: center;
 }
 
-#accept, #reject {
+#dismiss {
+  text-align: right;
+}
+
+.consent {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+#accept, #reject, #change {
   background-color: $background-color;
   border: none;
   color: #AAAAAA;

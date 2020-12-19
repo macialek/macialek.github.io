@@ -10,22 +10,22 @@
   <div class="lightbox"
     id="consentDialog">
     <div class="lightbox-content">
-      <div class="dismiss-button"
+      <div class="dismiss-button" id="dismiss"
         role="button"
         tabindex="0"
         on="tap:myConsent.dismiss">X</div>
       <div class="message">
-        <h3>Zgoda na na analitykę</h3>
-        <p>Czy zgadzasz się na śledzenie przez Google Analytics na tych stronach?</p>
+        <h3 class="consent">Zgoda na na analitykę</h3>
+        <p class="consent">Czy zgadzasz się na śledzenie przez Google Analytics na tych stronach?</p>
       </div>
       <div id="choice">
-		<button on="tap:myConsent.accept">Zgadzam się</button>
-		<button on="tap:myConsent.reject">Nie zgadzam się</button>
+		<button id="accept" on="tap:myConsent.accept">Zgadzam się</button>
+		<button id="reject" on="tap:myConsent.reject">Nie zgadzam się</button>
       </div>
     </div>
   </div>
   <div id="post-consent-ui">
-    <button on="tap:myConsent.prompt()">Zmień zgodę na analitykę</button>
+    <button id="change" on="tap:myConsent.prompt()">Zmień zgodę na analitykę</button>
   </div>
   </amp-consent>
 <!-- Configure analytics to use gtag -->
