@@ -4,11 +4,11 @@
     src: url(/assets/fonts/UnicaOne-Regular.ttf) format('truetype');
 }
 @font-face {
-    font-family: 'PTSans';
-    src: url(/assets/fonts/PTSansNarrow-Regular.ttf) format('truetype');
+    font-family: 'OpenSansCondensed';
+    src: url(/assets/fonts/OpenSansCondensed-Light.ttf) format('truetype');
 }
 
-$base-font-family: 'Abel', monospace;
+$base-font-family: 'OpenSansCondensed', monospace;
 
 $brand-color:           #4D4D4D !default;
 $brand-color-light:     lighten($brand-color, 40%) !default;
