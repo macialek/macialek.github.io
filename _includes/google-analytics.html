@@ -25,4 +25,12 @@
   </div>
   </amp-consent>
 <!-- Configure analytics to use gtag -->
-<amp-analytics data-block-on-consent config="https://www.googletagmanager.com/amp.json?id={{ site.google_analytics }}" data-credentials="include"></amp-analytics>
+<amp-analytics data-block-on-consent config="https://www.googletagmanager.com/amp.json?id={{ site.google_analytics }}" data-credentials="include">
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', '{{ site.google_analytics }}');
+	</script>
+</amp-analytics>
