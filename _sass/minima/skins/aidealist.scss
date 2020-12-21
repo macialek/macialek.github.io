@@ -34,6 +34,10 @@ $table-header-bg-color: lighten($brand-color, 43%) !default;
 $table-header-border:   lighten($brand-color, 37%) !default;
 $table-border-color:    $border-color-01 !default;
 
+amp-img {
+  background-color: $background-color;
+}
+
 // Cookie Consent
 #consentDialog {
 	color: #AAAAAA; 
