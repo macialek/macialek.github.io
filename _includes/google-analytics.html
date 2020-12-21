@@ -1,22 +1,18 @@
   <!-- Consent to use analytics -->
-  <amp-consent id="myConsent"
-  layout="nodisplay">
+  <amp-consent id="myConsent" layout="nodisplay">
   <script type="application/json">{
         "consentInstanceId": "aidealist-consent",
         "consentRequired": true,
         "promptUI": "consentDialog",
         "postPromptUI": "post-consent-ui"
       }</script>
-  <div class="lightbox"
-    id="consentDialog">
+  <div class="lightbox" id="consentDialog">
     <div class="lightbox-content">
-      <div class="dismiss-button" id="dismiss"
-        role="button"
-        tabindex="0"
-        on="tap:myConsent.dismiss">X</div>
+      <div class="dismiss-button" id="dismiss" role="button" tabindex="0"on="tap:myConsent.dismiss">✗</div>
       <div class="message">
         <h3 class="consent">Zgoda na na analitykę</h3>
-        <p class="consent">Czy zgadzasz się na śledzenie przez Google Analytics na tych stronach?</p>
+        <p class="consent">Czy zgadzasz się na śledzenie przez Google Analytics na tych stronach? <br/> Dane są wykorzystywane przeze mnie na potrzeby analizowania liczby i źródeł odsłon. 
+		Więcej dowiesz się z <a href="/privacy">polityki prywatności.</a></p>
       </div>
       <div id="choice">
 		<button id="accept" on="tap:myConsent.accept">Zgadzam się</button>
