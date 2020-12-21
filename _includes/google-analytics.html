@@ -26,14 +26,17 @@
   </amp-consent>
 <!-- Configure analytics to use gtag -->
 <amp-analytics data-block-on-consent type="gtag" data-credentials="include">
-<script type="application/json">
-{
-  "vars" : {
-    "gtag_id": "{{ site.google_analytics }}",
-    "config" : {
-      "{{ site.google_analytics }}": { "groups": "default" }
+  <script type="application/json">
+  {
+    "vars": {
+      "account": "{{ site.google_analytics }}"
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+      }
     }
   }
-}
-</script>
+  </script>
 </amp-analytics>
