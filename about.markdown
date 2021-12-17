@@ -11,10 +11,13 @@ Inżynier ze świetnymi umiejętnościami komunikacyjnymi i bogatym doświadczen
 * Python
 * Spark
 * Hadoop
+* BigQuery
 * SQL
 
 ## Ulubione biblioteki:
 * Pandas
+* Numpy
 * Scikit-learn
-* Matplotlib
+* Plotly
 * Requests
+* FastAPI
