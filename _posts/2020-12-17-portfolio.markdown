@@ -20,7 +20,9 @@ Celem projektu było pobranie kreacji publikowanych w różnych mediach społecz
 
 Celem projektu było wygenerowanie i zapewnienie możliwości dalszego generowania opisów produktów w oparciu o ich zdjęcia i elementy opisu (np. wymiary) zawarte w bazie danych. Wygenerowane opisy miały być wielojęzyczne. W ramach prac zapewniłem połączenie z Magento API (pobieranie i wysyłanie danych) oraz wygenerowanie i walidację niezbędnych opisów z użyciem modelu GPT4o. Rozwiązanie zostało wdrożone 
 
-## 
+## Optymalizacja procesów magazynowych
+
+Do projektu trafiłem z zadaniem przejęcia kodu od rozwijającego go specjalisty, który opuszczał organizację. Kod miał być gotowy do wdrożenia i skalowania. Już podczas początkowych prac okazało się, że rozwiązanie nie spełnia zakładanych wymagań funkcjonalnych, a kod nie spełnia wewnętrznych wymagań dotyczących standardu oprogramowania. Moja rola i zaagażowanie zostały poszerzone, razem z klientem przygotowaliśmy specyfikację wymagań wraz z oznaczeniem aktualnie zrealizowanych funkcji. Następnie przygotowałem plan naprawczy projektu, zakładający m.in. przygotowanie danych testowych, opisanie scenariuszy testowych, pokrycie kodu testami, refaktoryzację kodu (podział monolitycznego kodu na moduły i klasy) oraz finalnie uzupełnienie braków funkcjonalnych. Plan został zaakceptowany przez klienta, w toku jego realizacji pełniłem rolę lidera technologicznego. Ze strony Data Science projekt koncentrował się na wykorzystaniu podejścia MILP. Do rozwiązania opisującego problem układu nierówności posługiwaliśmy się komercyjnym solverem Fico Express. Projekt zakończył się sukcesem, przygotowane rozwiązanie jest wdrażane w kolejnych centrach magazynowych klienta.
 
 ## Narzędzie wykrywania defektów w szklanych opakowaniach
 
