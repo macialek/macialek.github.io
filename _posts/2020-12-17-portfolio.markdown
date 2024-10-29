@@ -1,20 +1,31 @@
 ---
 layout: post
 title:  "Portfolio"
-date:   2024-09-17 09:36:52 +0100
+date:   2024-04-17 09:36:52 +0100
 categories: kariera
 tags: kariera cv
 author: Maciej Michałek
 ---
 Co nieco o projektach, które zrealizowałem.
 
+## Narzędzie streszczania komentarzy i śledzenia ich tonu
+
+Rozwiązanie korzysta z aktualizowanych raz na dobę danych dotyczących komentarzy zostawianych pod produktami przedsiębiorstwa sprzedawanymi na różnych platformach eCommerce. Z wykorzytaniem GPT4 turbo ocenia ton danego komentarza (pozytywny, negatywny, neutralny) oraz w zadanym oknie czasowym, z wykorzystaniem przygotowanych promptów streszcza treść komentarzy, opisując przy tym pewne konretkne aspekty, jak uwagi dotyczące jakości, czasu dostawy oraz pomysły na rozwój produktów. Dane są przetwarzane batchowo, zapisywane w data lake, wizualizowane jako dodatkowa warstwa analityczna w PBI.
+
 ## Narzędzie weryfikacji publikowanych treści pod kątem zgodności z wytycznymi dotyczącymi ekspozycji marki
 
-Celem projektu było pobranie kreacji publikowanych w różnych mediach społecznościowych i wewnętrznych kanałach komunikacji klienta, a następnie ich walidacja pod kątem zgodności z wytycznymi dotyczącymi prezentowania marki i zwizualizowanie uzyskanych danych w postaci raportu. Byłem odpowiedzialny za defiincję problemu z klientem i przygotowanie pomysłu na jego rozwiązanie i architektury rozwiązania. W projekcie uczestniczyłem także w roli tech leada, dbając o zapewnienie ciągłego dostarczania ustalonego zakresu w pożądanej jakości. Miałem też okazję samodzielnie zaprogramować kilka modułów rozwiązania.
+Celem projektu było pobranie kreacji publikowanych w różnych mediach społecznościowych i wewnętrznych kanałach komunikacji klienta, a następnie ich walidacja pod kątem zgodności z wytycznymi dotyczącymi prezentowania marki i zwizualizowanie uzyskanych danych w postaci raportu. Byłem odpowiedzialny za defincję problemu z klientem i przygotowanie pomysłu na jego rozwiązanie oraz architektury rozwiązania. W projekcie uczestniczyłem także w roli lidera technologicznego, dbając o zapewnienie ciągłego dostarczania ustalonego zakresu w pożądanej jakości. Samodzielnie zaprogramowałem kilka modułów rozwiązania, wykonywałem rewizje dostarczanego kodu. Rozwiązanie od strony data science korzysta z klasycznego podejścia CV wzbogaconego rozpoznawaniem obiektów z wykorzystaniem modelu Yolo. Architekturalnie to grupa niezależnych mikroserwisów obudowanych API (fastAPI), skonteneryzowanych i wdrożonych jako Web App na dedykowanym App Service Plan. 
 
 ## Generowanie opisów produktów klienta z branży meblarskiej korzystającego z systemy Magento dla eCommerce
 
-Celem projektu było wygenerowanie i zapewnienie możliwości dalszego generowania opisów produktów w oparciu o ich zdjęcia i elementy opisu (np. wymiary) zawarte w bazie danych. Wygenerowane opisy miały być wielojęzyczne. W ramach prac zapewniłem połączenie z Magento API (pobieranie i wysyłanie danych) oraz wygenerowanie i walidację niezbędnych opisów z użyciem modelu GPT4o. Rozwiązanie zostało wdrożone na platformie Azure.
+Celem projektu było wygenerowanie i zapewnienie możliwości dalszego generowania opisów produktów w oparciu o ich zdjęcia i elementy opisu (np. wymiary) zawarte w bazie danych. Wygenerowane opisy miały być wielojęzyczne. W ramach prac zapewniłem połączenie z Magento API (pobieranie i wysyłanie danych) oraz wygenerowanie i walidację niezbędnych opisów z użyciem modelu GPT4o. Rozwiązanie zostało wdrożone 
+
+## 
+
+## Narzędzie wykrywania defektów w szklanych opakowaniach
+
+Celem projektu było wykorzystanie zdjęć wykonywanych w podczerwieni butelkom na linii produkcyjnej tuż po rozdmuchu i wykorzystanie sztucznej inteligencji do wykrywania potencjalnych wad. W projekt byłem zaangażowany jako Data Scientist i odpowiedzialny za przygotowanie PoC. Po rozmowach z ekpertami zaimplementowałem dwa mechanizmy sprawdzania anomalii. Jeden, uniwersalny mechanizm niezależny od typu rozdmuchiwanej butelki opierał się na odnajdywaniu jej osi symetrii i badaniu podobieństwa pomiędzy wyznaczonymi połówkami. Różnica z dużym prawdopodobieństwem oznacza wadę. Zaletą tego rozwiazania jest szybkość, bez problemu może być wdrożone jako rozwiązanie typu embedded działające bezpośrednio przy kamerze przemysłowej. Drugie podejście korzystało z oznakowanych danych. Na przygotowanym razem z ekspertami zbiorze danych oznaczone zostały prostokąty zawierające defekty wraz z typem defektu. Zbiór treningowy następie poszerzyłem technikami augmentacji, wyszkoliłem na nim kilka popularnych modeli oraz model o samodzielnie zdefiniowanej architekturze (Tensorflow, w oparciu o pracę naukowców opisaną w artykule dostępnym w arXiv). Rozwiązanie zapewniało niezbędną skuteczność i szybkość działania.
+
 
 ## Platforma automatycznego generowania i publikowania artykułów
 
