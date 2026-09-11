@@ -16,9 +16,12 @@ Inżynier ze świetnymi umiejętnościami komunikacyjnymi i bogatym doświadczen
 * SQL
 * Azure
 * GCP
-* LLM
+* genAI
 
 ## Ulubione biblioteki:
+* LangGraph
+* LangChain
+* Tensorflow
 * Pandas
 * Numpy
 * Polars
@@ -27,6 +30,14 @@ Inżynier ze świetnymi umiejętnościami komunikacyjnymi i bogatym doświadczen
 * Requests
 * FastAPI
 * Pydantic
-* Tensorflow
-* LangChain
+* OR-Tools
+* Statsmodels
+* Nixtla
+* GluonTS
+* XGBoost
+* LightGBM
+
+
+
+
 
