@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Produktyzacja i wdrożenie modeli ML w 28 rynkach"
+title:  "Produktyzacja i wdrożenie modeli ML na 28 rynkach"
 date:   2025-09-24 11:40:00 +0200
 categories: kariera
 tags: kariera cv mlops
